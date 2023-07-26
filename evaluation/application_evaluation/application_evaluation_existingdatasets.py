@@ -14,7 +14,7 @@ def replace_values(example):
     if label == 1:
         label = 0
     elif label == 2:
-         label = 0
+        label = 0
     elif label == 3:
         label = 1
     example["label"] = label
