@@ -38,7 +38,7 @@ def run(arguments):
     logger.info("test:")
     log_dataset_statistics(dataset_test)
 
-    for current_size in (500, 1000, 2000, 5000, 10000):
+    for current_size in (50, 500, 1000, 2000, 10000):
         # get subset
         current_train_autolabeled = dataset_autolabeled.select(range(current_size))
         current_train_gold = dataset_gold.select(range(current_size))
